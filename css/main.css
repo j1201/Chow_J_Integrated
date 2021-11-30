@@ -52,18 +52,23 @@ __________________________________________*/
          - Floats
          - Font Awesome                       
    02. CSS Grid
+       - Index
+       - Recipe 
    03. Site Header
        - Logo
        - Nav
    04. Hero
        - Image
-       - Statement Style
+       - Index - Statement Style
    05. Recipe
       - Genernal
       - Text Style        
    06. Nutrition Checker
    07. Article
-   08. Footer                 
+   08. Footer
+   
+   // Recipe Page Style//
+   09. 
 /* _____________________________________
 
 /* ______________________________________
@@ -155,6 +160,21 @@ body {
        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .three-items {
+        display: grid;
+        grid-column: 1 / span 1;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+    }
+
+    .four-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+    }
+
+    /*--------- Index Page ---------*/
+
     .hero-text {
         display: grid; 
         grid-column: 1 / span 3;
@@ -181,17 +201,36 @@ body {
         row-gap: 1em;
     }
 
-    .three-items {
-        display: grid;
-        grid-column: 1 / span 1;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-evenly;
-     }
-
     .subscribtion {
         grid-column: 3;
     }
+    
+    /*--------- Recipe Page ---------*/
+    .recipe-items {
+        display: grid;
+        grid-column: 1 / span 3;
+        grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+    }
 
+    .rec-fact {
+        display: grid;
+        grid-column: 2 / span 4;
+    }
+
+    .cook-time {
+        display: grid;
+        padding: 0 6em;
+    }
+
+    .nutrition {
+        display: grid;
+        grid-column: 2 / span 1;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 
     /*--------- End Grid Items ---------*/
 /* _____________________________________
@@ -274,7 +313,7 @@ body {
         grid-row: 1;
     }
 
-     /*------------- Statement Styles ------------*/
+     /*------------- Index - Statement Styles ------------*/
 
     .hero > div {
         display: flex;
@@ -314,7 +353,7 @@ body {
 
     /*------------- Start Recipe ------------*/
 
-    .rec-title {
+    .lat-rec-title {
         align-items: center;
         grid-column: 1/4;
         margin-top: 1em;
@@ -512,10 +551,6 @@ body {
         margin: .5em;
     }
 
-    .center-item {
-        padding-bottom: 2em;
-    }
-
     .subscribtion {
         margin-top: 1.5em;
     }
@@ -566,5 +601,201 @@ body {
     }
 
     /*------------- End Footer ------------*/
+
+    /*------------- Start Recipe Page Style ------------*/
+
+    
+        /*------------- Recipe - Hero ------------*/
+    
+    .rec-title {
+        align-items: center;
+        grid-column: 2 / span 4;
+        margin-top: 1em;
+    }
+
+    .nut-fact {
+        background-color: #EEECE7;
+        border-radius: 18px;
+        padding: .3em 0 .3em 3em;
+    }
+
+        /*------------- Text Styles ------------*/
+    
+    .rec-title h2, .rec-title p {
+        padding: 0 2em;
+        line-height:1.8em;
+        text-align: center;
+    }
+
+    .rec-title h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .rec-title p {
+        font-size: .9em;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .star-icon-top {
+        text-align: center;
+        color: #ffe400;
+        padding: 1em 1em;
+    }
+
+    .cook-time {
+        text-align: center;
+        padding-top: 1.1em;
+    }
+
+    .cook-time span , .nutrition span , .share-btn span {
+        font-family: "freight-sans-pro" , sans-serif;
+        font-weight: 500;
+        font-size: .8em;
+        letter-spacing: .1em;
+        color: #999999;
+    }
+
+    .cook-time p , .nutrition p {
+        font-style: normal;
+    }
+
+    .nutrition span {
+        color: #666666;
+    }
+
+    .nut-title h3 {
+        text-align: center;
+        font-family: "freight-sans-pro", sans-serif;
+        font-weight: 500;
+        font-size: .8em;
+        font-style: italic;
+        letter-spacing: .1em;
+        color: #999999;
+    }
     
     
+     /*------------- End Recipe ------------*/
+
+    /*------------- Start Instruction ------------*/
+
+    .ingredients {
+        grid-column: 2 / 3;
+    }
+
+    .methods {
+        grid-column: 3 / 6;
+    }
+
+    .instruction {
+        background-color: #EEECE7;
+        padding: 1.5em 0 1.5em 0;
+    }
+
+    /*------------- Text Styles ------------*/
+
+
+    .instruction h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+        font-style: normal;
+        line-height:1.8em;
+    }
+
+    .instruction p {
+        font-size: .9em;
+        font-weight: 400;
+        font-style: normal;
+        line-height:1.8em;
+    }
+
+    .share-btn h3 {
+        margin-bottom: .3em;
+    }
+
+    .share-icon > * {
+        font-size: 1.4em;
+        letter-spacing: .2em;
+        color: #CCCCCC !important;
+    }
+
+    /*------------- End Instruction ------------*/
+
+    /*------------- Start Gallery ------------*/
+
+    .recipe-img {
+        display: grid;
+        grid-column: 1 / span 4;
+        grid-gap: 3.4em;
+    }
+
+    .recipe-img {
+        width: 100%;
+    }
+
+    .rec-img-three {
+        grid-column: 1 / span 4;
+        justify-self: center;
+    }
+
+    .rec-img-one {
+        grid-column: 1 / span 2;
+        justify-self: end;
+    }
+
+    .rec-img-two {
+        grid-column: 3 / span 2;
+        justify-self: start;
+    }
+
+    .rec-img-four {
+        grid-column: 1 / span 4;
+        justify-self: center;
+    }
+
+    /*------------- End Gallery ------------*/
+
+    /*------------- Start Rating ------------*/
+
+    .rating {
+        background-color: #efece7;
+        padding: 2em 0 0 0;
+    }
+
+    .rating h3 {
+        font-size: 1.2em;
+        font-weight: 400;
+        font-style: normal;
+        color: inherit;
+        text-align: center;
+    }
+
+    .star-icon {
+        text-align: center;
+        color: #ffe400;
+        padding: 20px 0;
+    }
+
+    .rating input[type="radio"] {
+        display: none;
+    }
+
+    .rating input[type="radio"] + label {
+       font-size: 1.5em;
+       text-shadow: 1px 1px 0 #838383;
+       cursor: pointer;
+    }
+
+    .rating input[type="radio"]:checked + label ~ label {
+       color: #838383;
+    } 
+
+    .rating label:active {
+        transform: scale(0.8);
+        transition: 0.3s ease;
+    }  
+
+
+    /*------------- End Rating ------------*/
