@@ -4,120 +4,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/07199f6f37.js" crossorigin="anonymous"></script>
+    <link href="css/recipe.css" rel="stylesheet" type="text/css">
     <title>Recipe | kind kitchen</title>
 </head>
 <body>
     <h1 class="hidden">Recipe</h1>
     <a class="hidden" href="#content">Skip to content</a> 
-    <header>
-        <nav aria-label="Main Navigation">
-            <h2 class="hidden">Main Navigation</h2>
+    <header class="head">
+        <nav class="nav f-left margin" aria-label="Main Navigation">
             <ul>
-                <li><a href="#">recipe</a></li>
-                <li><a href="#">article</a></li>
-                <li><a href="about.html">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">recipe</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">article</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
             </ul>
         </nav>
-        <!-- logo goes here -->
-        <a href="index.html">
-            <img src="https://via.placeholder.com/200x45?text=Logo" alt="Placeholder image - Size 200x45px">
+        <a class="head-logo" href="index.html">
+            <img class="logo-img" src="assets/logo.png" alt="kind kitchen logo">
         </a>
-        <!-- Facebook icon goes here -->
-        <a href="#">
-            <img src="https://via.placeholder.com/20x20?text=Facebook" alt="Placeholder image - Size 20x20px">
-        </a>
-        <!-- Instagram icon goes here -->
-        <a href="#">
-            <img src="https://via.placeholder.com/20x20?text=Instagram" alt="Placeholder image - Size 20x20px">
-        </a>
-        <!-- Twitter icon goes here -->
-        <a href="#">
-            <img src="https://via.placeholder.com/20x20?text=Twitter" alt="Placeholder image - Size 20x20px">
-        </a>
-        <!-- add search bar-->
+        <div class="head-icon margin">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>    
+        </div>
     </header>
-    <main id="content">
-        <section>
-            <img src="https://via.placeholder.com/1415x521?text=Food+Image" alt="Placeholder image - Size 1415x521px">
-            <h2>Food 1</h2>
-            <!-- add star rating result-->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et urna mi. Nunc pretium nisi sed turpis viverra, fermentum mattis libero faucibus. Nulla vel tortor sed ex suscipit laoreet sit amet a arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae</p>
-            <h3>PREP</h3>
-            <p>15mins</p>
-            <h3>COOK</h3>
-            <p>45mins</p>
-            <h3>TOTAL</h3>
-            <p>60mins</p>
-            <h3>NUTRITION PER SERVING</h3>
-            <h3>KCAL</h3>
-            <p>500kcal</p>
-            <h3>FAT</h3>
-            <p>18g</p>
-            <h3>CARBS</h3>
-            <p>18g</p>
-            <h3>PROTEIN</h3>
-            <p>18g</p>
+    <main id="content" class="main">
+        <section class="hero">
+            <div class="hero-img">
+                <img src="images/page2_hero_curry.jpg" alt="Image of pumpkin lentil curry, a hand holding a bread digging into the curry">
+            </div>
         </section>
-        <section>
-            <h2>Ingredients</h2>
-            <p>Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet<br>Lorem ipsum dolor sit amet<br></p>
-            <h3>SHARE NOW</h3>
-            <!-- add Facebook, Instagram, Twitter logos and link them to the site-->
-            <h2>Methods</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et urna mi. Nunc pretium nisi sed turpis viverra, fermentum mattis libero faucibus. Nulla vel tortor sed ex suscipit laoreet sit amet a arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et urna mi. Nunc pretium nisi sed turpis viverra, fermentum mattis libero faucibus. Nulla vel tortor sed ex suscipit laoreet sit amet a arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et urna mi. Nunc pretium nisi sed turpis viverra, fermentum mattis libero faucibus. Nulla vel tortor sed ex suscipit laoreet sit amet a arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et urna mi. Nunc pretium nisi sed turpis viverra, fermentum mattis libero faucibus. Nulla vel tortor sed ex suscipit laoreet sit amet a arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae<br></p>
-            <img src="https://via.placeholder.com/1013x484?text=Making+Process+Image+1" alt="Placeholder image - Size 1013x484px">
-            <img src="https://via.placeholder.com/479x694?text=Making+Process+Image+2" alt="Placeholder image - Size 479x694px">
-            <img src="https://via.placeholder.com/479x694?text=Making+Process+Image+3" alt="Placeholder image - Size 479x694px">
-            <img src="https://via.placeholder.com/1013x484?text=Making+Process+Image+4" alt="Placeholder image - Size 1013x484px">
+        <section class="recipe-items">
+            <div class="rec-title margin-tb">
+                <h2>Roasted Pumpkin Lentil Curry</h2>
+                <!-- add star rating result-->
+                <p>This is a comfort food in the winter - a warm, creamy and hearty pumpkin and lentil curry. It is made with nutritious ingredients. Pumpkin has lots of vitamins and minerals and relatively few calories, while lentils are packed with B vitamins, magnesium, zinc and potassium. Plus, lentils are made up of over 25% protein, which makes them an excellent meat alternative. The recipe is simple and easy to make. </p>
+            </div>
+            <div class="rec-fact">
+                <div class="cook-time margin-tb">
+                    <div class="three-items">
+                        <div class="prep">
+                            <h3><span>PREP</span></h3>
+                            <p>15mins</p>
+                        </div>
+                        <div class="cook">
+                            <h3><span>COOK</span></h3>
+                            <p>45mins</p>
+                        </div>
+                        <div class="total">
+                            <h3><span>TOTAL</span></h3>
+                            <p>60mins</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nutrition margin-tb">
+                    <div class="nut-title">
+                        <h3>NUTRITION PER SERVING</h3>
+                    </div>
+                    <div class="four-items nut-fact">
+                        <div class="kcal">
+                            <h3><span>KCAL</span></h3>
+                            <p>500kcal</p>
+                        </div>
+                        <div class="fat">
+                            <h3><span>FAT</span></h3>
+                            <p>18g</p>
+                        </div>
+                        <div class="carbs">
+                            <h3><span>CARBS</span></h3>
+                            <p>18g</p>
+                        </div>
+                        <div class="protein">
+                            <h3><span>PROTEIN</span></h3>
+                            <p>18g</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
+        <section class="recipe-items instruction">
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <p>400g pumpkin chunks<br>2 Tbsp olive oil<br>a sprinkle of salt<br>1 onion<br>4 cloves garlic,<br>2 Tbsp Madras curry powder<br>1 tsp cinnamon<br>2 tins coconut milk<br>250g red lentils<br>a little water</p>
+                <br><br>
+                <div class="share-btn">
+                    <h3><span>SHARE NOW</span></h3>
+                    <div class="share-icon">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="methods">
+                <h2>Methods</h2>
+                <p>Preheat your oven to 200C and place your pumpkin chunks onto a lined baking tray. Drizzle with 1 tbsp olive oil and roast it in the oven for 30-40 minutes or until soft with browning edges. Transfer the soft pumpkin to a blender or food processor and blend until you’ve got a smooth pumpkin paste. If your blender struggles, add a little bit of water.<br><br>Heat the rest of the olive oil in a large non-stick frying pan, add in the diced onion and sauté for 2 minutes before adding the crushed garlic.<br><br>Add in all of the spices: cinnamon, salt and Madras curry powder and allow for them to toast and become fragrant for 1-2 minutes, then add in the red lentils. Stir and cook in the hot pan for 2 minutes, then add the roasted pumpkin puree and coconut milk and reduce the heat to low. Gradually bring to a simmer whilst stirring regularly, allowing for the red lentils to soak up the liquid.<br><br>Simmer for about 10-15 minutes until the lentils have soaked up the majority of the liquid, your roasted pumpkin dhal should still be creamy at this point – optionally, add a little bit of water until you get the right thick, creamy consistency.<br><br>Serve the roasted pumpkin dhal with a spoonful of coconut yoghurt and fresh coriander.</p>
+            </div>
+        </section>
+        <section class="gallery margin-tb">
+            <div class="recipe-img">
+                <div class="rec-img-one">
+                    <img src="images/page2_recipe_pumpkins.jpg" alt="Image of a bunch of pumpkins">
+                </div>
+                <div class="rec-img-two">
+                    <img src="images/page2_recipe_roasted_pumkins.jpg" alt="Image of roasted pumpkin, one of the chunks is picked up">
+                </div>
+                <div class="rec-img-three">
+                    <img src="images/page2_recipe_curry_pouring_milk.jpg" alt="Image of coconut milk is getting pour in a pot of curry">
+                </div>
+                <div class="rec-img-four">
+                    <img src="images/page2_recipe_curry.jpg" alt="Image of pumpkin lentil curry, a hand holding a bread digging into the curry">
+                </div>
+            </div>
+        </section>
+        <section class="center-item rating">
             <h3>Let us know what you think.</h3>
             <!-- add star rating-->
         </section>
     </main>
     <footer>
-        <section>
-            <h2 class="hidden">Kind Kitchen Site Footer</h2>
-            <nav aria-label="Footer Navigation">
-                <h3 class="hidden">Footer Nav</h3>
-                <ul>
-                    <li><a href="#">RECIPE</a></li>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Food</a></li>
-                    <li><a href="#">Meal</a></li>
-                    <li><a href="#">ARTICLE</a></li>
-                    <li><a href="#">Cooking tips</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li><a href="#">Wellness</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-            <!-- logo goes here -->
-            <a href="index.html">
-                <img src="https://via.placeholder.com/200x45?text=Logo" alt="Placeholder image - Size 200x45px">
-            </a>
-            <!-- Facebook icon goes here -->
-            <a href="#">
-                <img src="https://via.placeholder.com/20x20?text=Facebook" alt="Placeholder image - Size 20x20px">
-            </a>
-            <!-- Instagram icon goes here -->
-            <a href="#">
-                <img src="https://via.placeholder.com/20x20?text=Instagram" alt="Placeholder image - Size 20x20px">
-            </a>
-            <!-- Twitter icon goes here -->
-            <a href="#">
-                <img src="https://via.placeholder.com/20x20?text=Twitter" alt="Placeholder image - Size 20x20px">
-            </a>
-            <h3 class="hidden">Subscribtion</h3>
-            <h4>Keep In Touch<br> Join our free newsletter.</h4>
-            <h4 class="hidden">Subcribtion Form</h4>
-            <form action="subcribtion.php" method="POST" enctype="text/plain">
-                <input name="Email" type="email" required placeholder="Email">
-                <input name="Subscribe" type="submit" value="Send">
-            </form>
-            <p>PRIVACY POLICIES & DISCLAAIMERS / kind kitchen©2021</p>
+        <section class="foot">
+            <div>
+                <h2 class="hidden">Kind Kitchen Site Footer</h2>
+                <div class="three-items">
+                    <!-- <nav aria-label="Footer Navigation"> -->
+                        <h3 class="hidden">Footer Nav</h3>
+                        <nav>
+                            <div class="nav-items"><ul>
+                                <li><span><a href="#">RECIPE</a></span></li>
+                                <li><a class="foot-nav" href="#">All</a></li>
+                                <li><a class="foot-nav" href="#">Food</a></li>
+                                <li><a class="foot-nav" href="#">Meal</a></li>
+                            </ul></div>
+                        </nav>
+                        <nav>
+                            <div class="nav-items"><ul>
+                                <li><span><a href="#">ARTICLE</a></span></li>
+                                <li><a class="foot-nav" href="#">Cooking tips</a></li>
+                                <li><a class="foot-nav" href="#">Travel</a></li>
+                                <li><a class="foot-nav" href="#">Wellness</a></li>
+                            </ul></div>
+                        </nav>
+                            <nav>
+                            <div class="nav-items"><ul>
+                                <li><span><a href="about.html">ABOUT</a></span></li>
+                                <li><span><a href="#">CONTACT</span></a></li>
+                            </ul></div>
+                        </nav>
+                    <!-- </nav> -->
+                </div>
+                <div class="center-item">
+                    <a class="foot-logo" href="index.html">
+                        <img class="logo-img" src="assets/logo.png" alt="kind kitchen logo">
+                    </a>
+                    <div class="foot-icon">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="subscribtion">
+                    <h3 class="hidden">Subscribtion</h3>
+                    <h4>Keep In Touch</h4>
+                    <h5>Join our free newsletter.</h5>
+                    <div class="sub-form">
+                        <h4 class="hidden">Subcribtion Form</h4>
+                        <form action="subcribtion.php" method="POST" enctype="text/plain">
+                            <input name="Email" type="email" required placeholder="Email">
+                            <button type="submit" class="f-right" value="Send">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="center-item disclaimmers">
+                    <p>PRIVACY POLICIES & DISCLAIMERS / kind kitchen©2021</p>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
