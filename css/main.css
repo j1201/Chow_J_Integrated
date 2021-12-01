@@ -40,53 +40,107 @@ Accessibility
 	z-index: 100000; /* Above WP toolbar */
 }
 
-/* --------------
-    Fonts   
-
-----------------*/
-
-/* ---------------*/
-
-/* ---------------
-    Plugins
------------------*/
-
 /* _________________________________________
 
         CSS Guide
 __________________________________________*/
 
 /* 01. General Styles
-    02. 
+       - Reset
+       - Global
+         - General
+         - Floats
+         - Font Awesome                       
+   02. CSS Grid
+       - Index
+       - Recipe 
+   03. Site Header
+       - Logo
+       - Nav
+   04. Hero
+       - Image
+       - Index - Statement Style
+   05. Recipe
+      - Genernal
+      - Text Style        
+   06. Nutrition Checker
+   07. Article
+   08. Footer
+   
+   // Recipe Page Style//
+   09. 
+/* _____________________________________
+
 /* ______________________________________
 
     01. General Styles
     ___________________________________*/
 
+/* -------------
+  Reset
+-------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #1A1A1A;
+    font-family: 'Warnock Pro', serif;
+ }
+
+ h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+ }
+
+ /* -------------
+  Global
+-------------*/
+
+   /*------------ General ------------*/
+
     .hidden {
-        display: none;
-    }
-    
-   .box-model {
-    margin: 1rem;
-    padding: 1rem;
-    background: #000;
+        display: none !important;
     }
 
-    .nav-link {
-        font-family: 'Ovo', serif;
-        font-size: 20px;
-       }
+    .margin-tb {
+        margin-top: 1.5em !important;
+        margin-bottom: 2.5em !important;
+    }
 
-    h2 {
-        font-family: 'Ovo', serif;
-        font-size: 42px;
-       }
-    
-    p {
-        font-family: 'Quattrocento Sans', sans-serif;
-        font-size: 17px;
-      }
+    .margin {
+        margin: 0 3.05em;
+    }
+
+    .padding {
+        padding: 0 1rem;
+    }
+
+    input[type=text] , button , input[type=email] {
+        font-family: 'Ovo' , serif;
+    }
+
+    /*------------ End General ------------*/
+
+   /*------------ Floats ------------*/
+
+   .f-left {
+    float: left;
+    }
+
+    .f-right {
+    float: right;
+    }
+
+    /*------------ End Floats ------------*/
+    /*------------ Font Awesome ------------*/
+
+   .fas .fab {
+    margin-right: .5em;
+    font-size: 1em;
+    color: #737a7f;
+    }
+
+     /*------------ End Font Awesome ------------*/
 
 /* _____________________________________
 
@@ -101,48 +155,647 @@ __________________________________________*/
 
     /*--------- Grid Items ---------*/
 
-    .head {
+    .head, .main > *, .foot > * {
        display: grid;
-       grid-template-columns: 1fr repeat(1,minmax(auto, 30em)) 1fr;
+       grid-template-columns: 1fr 1fr 1fr;
     }
-/* 
-    .main > *, .foot > *{
+
+    .three-items {
         display: grid;
-        grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
-     } */
+        grid-column: 1 / span 1;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+    }
+
+    .four-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: space-evenly;
+    }
+
+    /*--------- Index Page ---------*/
+
+    .hero-text {
+        display: grid; 
+        grid-column: 1 / span 3;
+    }
+
+    .center-item {
+        display: grid;
+        grid-column: 2 / span 1;
+        grid-template-columns: 1fr;
+    }
+
+    .recipe {
+        background-color: #eae8e6;
+        justify-content: space-evenly;
+        row-gap: 1em;
+        column-gap: 2em;
+    }
+
+    .lat-art{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        background-color: #eae8e6;
+        row-gap: 1em;
+    }
+
+    .subscribtion {
+        grid-column: 3;
+    }
+    
+    /*--------- Recipe Page ---------*/
+    .recipe-items {
+        display: grid;
+        grid-column: 1 / span 3;
+        grid-template-columns: 1fr repeat(4, 2fr) 1fr;
+    }
+
+    .rec-fact {
+        display: grid;
+        grid-column: 2 / span 4;
+    }
+
+    .cook-time {
+        display: grid;
+        padding: 0 6em;
+    }
+
+    .nutrition {
+        display: grid;
+        grid-column: 2 / span 1;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 
     /*--------- End Grid Items ---------*/
+/* _____________________________________
 
-    /*--------- Site Header ---------*/
+   03. Site Header
+   _____________________________________ */
 
-     .nav {
-        grid-column: 1 / span 1;
-     }
+    .head-logo {
+        grid-column: 2 ;
+        justify-self: center;
+        padding: .6em 0 .5em 0;
 
-     ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        padding: 8px;
-      }
+    }
 
-      .logo {
-          grid-column: 2 / span 1;
-          justify-self: center;
-      }
-
-      .logo-img {
+    .logo-img {
         max-width: 350px;
         height: auto;
+    }
+
+     /*------------ Start Nav Styling ------------*/
+
+    .nav {
+        grid-column: 1 ;
+        align-self: center;
+    }
+
+    .nav ul {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        text-align: start;
+    }
+      
+    nav li {
+        display: inline;
+        margin-right: 3em;
+     }
+
+    nav li a , .head-icon a {
+        text-decoration: none;
+        color: #737a7f;
+        font-size: 1.1em;
+    }
+
+    nav li a.active {
+        padding-bottom: .2em;
+        border-bottom: 2px solid rgb(24, 24, 65)
+     }
+
+    .head-icon { 
+        grid-column: 3 ;
+        text-align:right;
+        align-self: center;
+    }
+
+    .head-icon i {
+        padding: 8px;
+    }
+
+    /*--------- End Site Header ---------*/
+
+    /*------------- Start Hero ------------*/
+
+    .hero {
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    .hero-img {
+        display: grid;
+        grid-column: span 4;
+    }
+
+    .hero-img > * {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+     /*------------- Index - Statement Styles ------------*/
+
+    .hero > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero h2, .hero p {
+        padding: .5em 9em;
+        line-height:1.8em;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .hero span {
+        font-family: 'freight-sans-pro' , sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: .12em;
+        font-style: normal;
+        line-height: normal;
+        color: #666666;
+    }
+
+    /*------------- End Hero ------------*/
+
+    /*------------- Start Recipe ------------*/
+
+    .lat-rec-title {
+        align-items: center;
+        grid-column: 1/4;
+        margin-top: 1em;
+    }
+
+    .rec-items {
+        grid-row: 2;
+        grid-column: 1/4;
+        display: grid;
+        grid-auto-flow: column;
+        justify-self: center;
+        grid-gap: 6.6em;
+    } 
+
+     /*------------- Text Styles ------------*/
+
+    .title h2 {
+        padding: .5em;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: 600;
+        font-style: normal;
+    }
+ 
+    .sub-title a:link {
+        text-decoration: none !important;
+    }
+
+    .sub-title a {
+        color: inherit;
+    }
+
+    .sub-title h3 {
+        font-size: 1.5em;
+        font-weight: 600;
+        font-style: normal;
+        color: #1A1A1A;
+        margin-bottom: 1em;
+    }
+
+    .sub-title span {
+        font-family: 'freight-sans-pro' , sans-serif;
+        font-size: .8em;
+        font-weight: 600;
+        letter-spacing: .12em;
+        font-style: normal;
+        line-height: normal;
+        color: #666666;
+    }
+
+    /*------------- End Recipe ------------*/
+
+    /*------------- Start Nutrition Checker ------------*/
+    .nut-check {
+        margin-top: 1.5em;
+    }
+
+    form {
+        margin-top: 4.2em;
+    }
+
+    .nut-check input {
+        margin: 0 auto;
+        width: 80%;
+        padding: 12px;
+        float: left;
+        font-size: 1.1em;
+        border: 3px solid #1A1A1A;
+        border-radius: 6px 0 0 6px;
+    } 
+
+    .nut-check button {
+        padding: 14px;
+        position: absolute; 
+        background: #1A1A1A;
+        color: white;
+        border: 1px solid #1A1A1A;
+        border-radius: 0 6px 6px 0;
+        cursor: pointer;
+        font-size: 1.1em;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: #4D4D4D;
+        color: white;
+      }
+    
+    .nut-tag {
+       margin: 0px auto;
+    }
+
+    .nut-tag ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 1em 0 0 1.5em;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .nut-tag li {
+        float: inline-start;
+    }
+
+    .nut-tag li a {
+        font-size: 1.1em;
+        color: #4D4D4D;
+        display: inline-block;
+        text-align: center; 
+        padding: 15px;
+        text-decoration: none;
+        margin-bottom: 2em;
+    }
+
+    .nut-tag li a:hover {
+        background-color: #1A1A1A;
+        color: #f7f7f7;
       }
 
-     /*--------- End Site Header ---------*/
+    /*------------- End Nutrition Checker ------------*/
+
+    /*------------- Start Article ------------*/
+
+    .art-title {
+        grid-row: 1;
+        grid-column: 1/5;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .art-items {
+        display: grid;
+        grid-row: 2/3;
+        grid-column: 2 / span 1;
+        grid-template-columns: auto;
+        grid-gap: 0 2.5em;
+    }
+    
+    .art-one {
+        grid-column: 1/3;
+    }
+    .art-two {
+        grid-column: 3/4;
+    }
+    .art-three {
+        grid-column: 4/5;
+    }
+    .art-four {
+        grid-column: 1/2;
+    }
+    .art-five {
+        grid-column: 2/4;
+    }
+    .art-six {
+        grid-column: 4/5;
+    }
+
+    /*------------- End Article ------------*/
+
+    /*------------- Start Footer ------------*/
+    .foot {
+        background-color: #4d4d4d;
+        padding: 2em;
+    }
+
+    .foot span {
+        font-family: "freight-sans-pro" , sans-serif;
+        font-size: 1.2em;
+        color: #999999 !important;
+    }
+
+    .foot nav li {
+        margin: 0;
+        display: block;
+    }
+
+    .foot-nav , .foot-icon > * {
+        color: #f7f7f7;
+    }
+
+    .foot a {
+        line-height: 1.5em; 
+    }
+
+    .foot-logo {
+        filter:  brightness(0) invert(1);
+    }
+
+    .foot-logo , .foot-icon {
+        justify-self: center;
+    }
+
+    .foot-icon > * {
+        font-size: 1.4em;
+        margin: .5em;
+    }
+
+    .subscribtion {
+        margin-top: 1.5em;
+    }
+
+    .subscribtion h4 , h5 , .disclaimmers {
+        text-align: center;
+        color: #f7f7f7;
+        line-height: .1em; 
+    }
+
+    .subscribtion h4 {
+        font-size: 1.4em;
+    }
+
+    .subscribtion h5 {
+        font-size: 1.1em;
+        margin-bottom: -2.2em;
+    }
+
+    .sub-form {
+        padding-right: 4em;
+    }
+
+    .sub-form input {
+        width: 80%;
+        padding: 12px;
+        float: left;
+        font-size: 17px;
+        border-radius: 28px 0 0 28px;
+
+    } 
+
+    .sub-form button {
+        width: 8%;
+        padding: 12.5px;
+        position: absolute; 
+        background: #808080;
+        color: white;
+        border-radius: 0 28px 28px 0;
+        cursor: pointer;
+        font-size: 17px;
+        transition: 0.3s;
+    }
+
+    .disclaimmers {
+        text-align: center;
+        padding: 1.5em 0;
+    }
+
+    /*------------- End Footer ------------*/
+
+    /*------------- Start Recipe Page Style ------------*/
+
+    
+        /*------------- Recipe - Hero ------------*/
+    
+    .rec-title {
+        align-items: center;
+        grid-column: 2 / span 4;
+        margin-top: 1em;
+    }
+
+    .nut-fact {
+        background-color: #EEECE7;
+        border-radius: 18px;
+        padding: .3em 0 .3em 3em;
+    }
+
+        /*------------- Text Styles ------------*/
+    
+    .rec-title h2, .rec-title p {
+        padding: 0 2em;
+        line-height:1.8em;
+        text-align: center;
+    }
+
+    .rec-title h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .rec-title p {
+        font-size: .9em;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .star-icon-top {
+        text-align: center;
+        color: #ffe400;
+        padding: 1em 1em;
+    }
+
+    .cook-time {
+        text-align: center;
+        padding-top: 1.1em;
+    }
+
+    .cook-time span , .nutrition span , .share-btn span {
+        font-family: "freight-sans-pro" , sans-serif;
+        font-weight: 500;
+        font-size: .8em;
+        letter-spacing: .1em;
+        color: #999999;
+    }
+
+    .cook-time p , .nutrition p {
+        font-style: normal;
+    }
+
+    .nutrition span {
+        color: #666666;
+    }
+
+    .nut-title h3 {
+        text-align: center;
+        font-family: "freight-sans-pro", sans-serif;
+        font-weight: 500;
+        font-size: .8em;
+        font-style: italic;
+        letter-spacing: .1em;
+        color: #999999;
+    }
+    
+    
+     /*------------- End Recipe ------------*/
+
+    /*------------- Start Instruction ------------*/
+
+    .ingredients {
+        grid-column: 2 / 3;
+    }
+
+    .methods {
+        grid-column: 3 / 6;
+    }
+
+    .instruction {
+        background-color: #EEECE7;
+        padding: 1.5em 0 1.5em 0;
+    }
+
+    /*------------- Text Styles ------------*/
+
+
+    .instruction h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+        font-style: normal;
+        line-height:1.8em;
+    }
+
+    .instruction p {
+        font-size: .9em;
+        font-weight: 400;
+        font-style: normal;
+        line-height:1.8em;
+    }
+
+    .share-btn h3 {
+        margin-bottom: .3em;
+    }
+
+    .share-icon > * {
+        font-size: 1.4em;
+        letter-spacing: .2em;
+        color: #CCCCCC !important;
+    }
+
+    /*------------- End Instruction ------------*/
+
+    /*------------- Start Gallery ------------*/
+
+    .recipe-img {
+        display: grid;
+        grid-column: 1 / span 4;
+        grid-gap: 3.4em;
+    }
+
+    .recipe-img {
+        width: 100%;
+    }
+
+    .rec-img-three {
+        grid-column: 1 / span 4;
+        justify-self: center;
+    }
+
+    .rec-img-one {
+        grid-column: 1 / span 2;
+        justify-self: end;
+    }
+
+    .rec-img-two {
+        grid-column: 3 / span 2;
+        justify-self: start;
+    }
+
+    .rec-img-four {
+        grid-column: 1 / span 4;
+        justify-self: center;
+    }
+
+    /*------------- End Gallery ------------*/
+
+    /*------------- Start Rating ------------*/
+
+    .rating {
+        background-color: #efece7;
+        padding: 2em 0 0 0;
+    }
+
+    .rating h3 {
+        font-size: 1.2em;
+        font-weight: 400;
+        font-style: normal;
+        color: inherit;
+        text-align: center;
+    }
+
+    .star-icon {
+        text-align: center;
+        color: #ffe400;
+        padding: 20px 0;
+    }
+
+    .rating input[type="radio"] {
+        display: none;
+    }
+
+    .rating input[type="radio"] + label {
+       font-size: 1.5em;
+       text-shadow: 1px 1px 0 #838383;
+       cursor: pointer;
+    }
+
+    .rating input[type="radio"]:checked + label ~ label {
+       color: #838383;
+    } 
+
+    .rating label:active {
+        transform: scale(0.8);
+        transition: 0.3s ease;
+    }  
+
+
+    /*------------- End Rating ------------*/

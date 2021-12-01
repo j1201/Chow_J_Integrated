@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/pdf8yhs.css">
+    <script src="https://kit.fontawesome.com/07199f6f37.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Home | kind kitchen</title>
 </head>
@@ -12,170 +13,206 @@
     <h1 class="hidden">Home</h1>
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a> 
     <header class="head">
-        <nav class="nav box-model" aria-label="Main Navigation">
+        <nav class="nav f-left margin" aria-label="Main Navigation">
             <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">recipe</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">article</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">about</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#">recipe</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">article</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
             </ul>
         </nav>
-        <!-- logo goes here -->
-        <a class="logo box-model" href="index.html">
-            <img class="logo-img" src="https://via.placeholder.com/200x45?text=Logo" alt="Placeholder image - Size 200x45px">
+        <a class="head-logo" href="index.html">
+            <img class="logo-img" src="assets/logo.png" alt="kind kitchen logo">
         </a>
-        <!-- Facebook icon goes here -->
-        <a href="#">
-            <img src="https://via.placeholder.com/20x20?text=Facebook" alt="Placeholder image - Size 20x20px">
-        </a>
-        <!-- Instagram icon goes here -->
-        <a href="#">
-            <img src="https://via.placeholder.com/20x20?text=Instagram" alt="Placeholder image - Size 20x20px">
-        </a>
-        <!-- Twitter icon goes here -->
-        <a href="#">
-            <img src="https://via.placeholder.com/20x20?text=Twitter" alt="Placeholder image - Size 20x20px">
-        </a>
-        <!-- add search bar-->
+        <div class="head-icon margin">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>    
+        </div>
     </header>
-    <main id="content">
-        <section>
-            <img src="https://via.placeholder.com/1415x521?text=Hero+Image" alt="Placeholder image - Size 1415x521px">
-            <h2 class="hidden">About kind kitchen</h2>
-            <h3>Statement</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et urna mi. Nunc pretium nisi sed turpis viverra, fermentum mattis libero faucibus. Nulla vel tortor sed ex suscipit laoreet sit amet a arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean mattis sodales augue vel suscipit. Nullam nisl justo, laoreet et urna vel, semper fermentum orci. Donec vitae tortor mauris. Nulla elit orci, ultrices ac mattis vel, fermentum vel lorem. Nulla facilisi. Pellentesque interdum lorem non nisi maximus volutpat nec id metus.</p>
+    <main id="content" class="main">
+        <section class="hero">
+            <div class="hero-img">
+                <img src="images/page1_hero_curry.jpg" alt="Image of pumpkin lentil curry">
+            </div>
+            <div class="hero-text margin-tb">
+                <h2>Welcome to the Kind Kitchen!</h2>
+                <p>I am glad that you are here. I believe that cooking and food bring people together and I want to share our joy and passion with you. My goal is to make a nourishing plant-based and cruelty-free lifestyle accessible to everyone. You will find simple and delicious recipes, nutrition and lifestyle articles here. Eager to get your meal on the table? Checkout our recipes and get ready to the market and your kitchen, to prepare a handful of healthy-ish meals during the week!  Hope you enjoy our blog and find some delicious inspiration here.</p>
+                <a href="about.html"><span>LEARN MORE</span></a><br>
+            </div>
         </section>
-        <section>
-            <h2>Lastest Recipe</h2>
-            <a href="recipe.html">
-                <img src="https://via.placeholder.com/352x493?text=Food+Image+1" alt="Placeholder image - Size 352x493px">
-            </a>
-            <h3> 
-                <a href="#">Recipe Category 1</a><br>
-                <a href="recipe.html">Food 1</a>
-            </h3>
-            <a href="#">
-                <img src="https://via.placeholder.com/352x493?text=Food+Image+2" alt="Placeholder image - Size 352x493px">
-            </a>
-            <h3>
-                <a href="#">Recipe Category 2</a><br>
-                <a href="#">Food 2</a>
-            </h3>
-            <a href="#">
-                <img src="https://via.placeholder.com/352x493?text=Food+Image+3" alt="Placeholder image - Size 352x493px">
-            </a>
-            <h3>
-                <a href="#">Recipe Category 3</a><br>
-                <a href="#">Food 3</a>
-            </h3>
+        <section class="recipe">
+            <div class="lat-rec-title title">
+                <h2>Lastest Recipe</h2>
+            </div>
+                <div class="rec-items sub-title">
+                    <div>
+                        <a href="#">
+                            <img src="images/page1_recipe_pastry.jpg" alt="Image of cutting a pricot pie">
+                        </a>
+                        <h3> 
+                            <a href="#"><span>DESSERT</span></a><br>
+                            <a href="recipe.html">Vegan Apricot Pie</a>
+                        </h3>
+                    </div>
+                    <div>
+                        <a href="recipe.html">
+                        <img src="images/page1_recipe_curry.jpg" alt="Image of pumpkin lentil curry">
+                        </a>
+                        <h3>
+                            <a href="#"><span>CURRY</span></a><br>
+                            <a href="#">Roasted Pumpkin Lentil Curry</a>
+                        </h3>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/page1_recipe_sandwich.jpg" alt="Image of a sloppy sandwich">
+                        </a>
+                        <h3>
+                            <a href="#"><span>LIGHT MEAL</span></a><br>
+                            <a href="#">Sloppy Veggie Sub</a>
+                        </h3>
+                    </div>
+                </div>
         </section>
-        <section>
-            <h2 class="hidden">Nutrition Calculator</h2>
-            <form action="nutrition.php" method="get">
-                <input name="food" type="text" placeholder="How many protein in plants?">
-                <button type="submit">let's find out!</button>
-            </form>
-            <ul>
-                <li><a href="#">tofu</a></li>
-                <li><a href="#">almonds</a></li>
-                <li><a href="#">lentils</a></li>
-                <li><a href="#">quinoa</a></li>
-                <li><a href="#">brocolli</a></li>
-            </ul>
+        <section class="nutrition">
+            <div class="center-item">
+                <div class="nut-check">
+                    <form action="./" method="get">
+                            <input name="food" type="text" placeholder="How many protein in plants?">
+                            <button type="submit" class="f-right">let's find out!</button>
+                    </form>
+                </div>
+                <div class="nut-tag">
+                    <ul>
+                        <li><a href="#">#tofu</a></li>
+                        <li><a href="#">#almonds</a></li>
+                        <li><a href="#">#lentils</a></li>
+                        <li><a href="#">#quinoa</a></li>
+                        <li><a href="#">#brocolli</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Lastest Article</h2>
-            <a href="#">
-                <img src="https://via.placeholder.com/596x407?text=Article+Image+1" alt="Placeholder image - Size 596x407px">
-            </a>
-            <h3>
-                <a href="#">Article Category 1</a><br>
-                <a href="#">Article 1</a>
-            </h3>
-            <a href="#">
-                <img src="https://via.placeholder.com/301x407?text=Article+Image+2" alt="Placeholder image - Size 301x407px">
-            </a>
-            <h3>
-                <a href="#">Article Category 2</a><br>
-                <a href="#">Article 2</a>
-            </h3>
-            <a href="#">
-                <img src="https://via.placeholder.com/301xßß407?text=Article+Image+3" alt="Placeholder image - Size 301x407px">
-            </a>
-            <h3>
-                <a href="#">Article Category 3</a><br>
-                <a href="#">Article 3</a>
-            </h3>
-            <a href="#">
-                <img src="https://via.placeholder.com/301x407?text=Article+Image+4" alt="Placeholder image - Size 301x407px">
-            </a>
-            <h3>
-                <a href="#">Article Category 4</a><br>
-                <a href="#">Article 4</a>
-            </h3>
-            <a href="#">
-                <img src="https://via.placeholder.com/596x407?text=Article+Image+5" alt="Placeholder image - Size 596x407px">
-            </a>
-            <h3>
-                <a href="#">Article Category 5</a><br>
-                <a href="#">Article 5</a>
-            </h3>
-            <a href="#">
-                <img src="https://via.placeholder.com/301x407?text=Article+Image+6" alt="Placeholder image - Size 301x407px">
-            </a>
-            <h3>
-                <a href="#">Article Category 6</a><br>
-                <a href="#">Article 6</a>
-            </h3>
+        <section class="lat-art">
+            <div class="art-title title">
+                <h2>Lastest Article</h2>
+            </div>
+            <div class="art-items sub-title">
+                    <div class="art-one">
+                        <a href="#">
+                            <img src="images/page1_article_train.jpg" alt="Shot taking in the train">
+                        </a>
+                        <h3>
+                            <a href="#"><span>WELLNESS</span></a><br>
+                            <a href="#">The Ride by Train</a>
+                        </h3>
+                    </div>
+                    <div class="art-two">
+                        <a href="#">
+                            <img src="images/page1_article_pumpkin.jpg" alt="Image of a pumpkin">
+                        </a>
+                        <h3>
+                            <a href="#"><span>NUTRITION</span></a><br>
+                            <a href="#">The Impressive Pumpkin</a>
+                        </h3>
+                    </div>
+                    <div class="art-three">
+                        <a href="#">
+                            <img src="images/page1_article_bridge_tree.jpg" alt="A bridge nearby the park">
+                        </a>
+                        <h3>
+                            <a href="#"><span>WELLNESS</span></a><br>
+                            <a href="#">Peace in the City</a>
+                        </h3>
+                    </div>
+                    <div class="art-four">
+                        <a href="#">
+                            <img src="images/page1_article_apples.jpg" alt="Different kinds of apples">
+                        </a>
+                        <h3>
+                            <a href="#"><span>NUTRITION</span></a><br>
+                            <a href="#">Which Apple Is the Healthiest</a>
+                        </h3>
+                    </div>
+                    <div class="art-five">
+                        <a href="#">
+                            <img src="images/page1_article_mountain_banff.jpg" alt="Shot taking on the mountain in Banff">
+                        </a>
+                        <h3>
+                            <a href="#"><span>TRAVEL</span></a><br>
+                            <a href="#">10 Things to Do in Banff</a>
+                        </h3>
+                    </div>
+                    <div class="art-six">
+                        <a href="#">
+                            <img src="images/page1_article_picking_apple.jpg" alt="Picking apple">
+                        </a>
+                        <h3>
+                            <a href="#"><span>COOKING TIP</span></a><br>
+                            <a href="#">How to Pick the Best Apple</a>
+                        </h3>
+                    </div>
+            </div>
         </section>
     </main>
     <footer>
-        <section>
-            <h2 class="hidden">Kind Kitchen Site Footer</h2>
-            <nav aria-label="Footer Navigation">
-                <h3 class="hidden">Footer Nav</h3>
-                <ul>
-                    <li><a href="#">RECIPE</a></li>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Food</a></li>
-                    <li><a href="#">Meal</a></li>
-                    <li><a href="#">ARTICLE</a></li>
-                    <li><a href="#">Cooking tips</a></li>
-                    <li><a href="#">Travel</a></li>
-                    <li><a href="#">Wellness</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
-            <!-- logo goes here -->
-            <a href="index.html">
-                <img src="https://via.placeholder.com/200x45?text=Logo" alt="Placeholder image - Size 200x45px">
-            </a>
-            <!-- Facebook icon goes here -->
-            <a href="#">
-                <img src="https://via.placeholder.com/20x20?text=Facebook" alt="Placeholder image - Size 20x20px">
-            </a>
-            <!-- Instagram icon goes here -->
-            <a href="#">
-                <img src="https://via.placeholder.com/20x20?text=Instagram" alt="Placeholder image - Size 20x20px">
-            </a>
-            <!-- Twitter icon goes here -->
-            <a href="#">
-                <img src="https://via.placeholder.com/20x20?text=Twitter" alt="Placeholder image - Size 20x20px">
-            </a>
-            <h3 class="hidden">Subscribtion</h3>
-            <h4>Keep In Touch<br> Join our free newsletter.</h4>
-            <h4 class="hidden">Subcribtion Form</h4>
-            <form action="subcribtion.php" method="POST" enctype="text/plain">
-                <input name="Email" type="email" required placeholder="Email">
-                <input name="Subscribe" type="submit" value="Send">
-            </form>
-            <p>PRIVACY POLICIES & DISCLAAIMERS / kind kitchen©2021</p>
+        <section class="foot">
+            <div>
+                <h2 class="hidden">Kind Kitchen Site Footer</h2>
+                <div class="three-items">
+                    <!-- <nav aria-label="Footer Navigation"> -->
+                        <h3 class="hidden">Footer Nav</h3>
+                        <nav>
+                            <div class="nav-items"><ul>
+                                <li><span><a href="#">RECIPE</a></span></li>
+                                <li><a class="foot-nav" href="#">All</a></li>
+                                <li><a class="foot-nav" href="#">Food</a></li>
+                                <li><a class="foot-nav" href="#">Meal</a></li>
+                            </ul></div>
+                        </nav>
+                        <nav>
+                            <div class="nav-items"><ul>
+                                <li><span><a href="#">ARTICLE</a></span></li>
+                                <li><a class="foot-nav" href="#">Cooking tips</a></li>
+                                <li><a class="foot-nav" href="#">Travel</a></li>
+                                <li><a class="foot-nav" href="#">Wellness</a></li>
+                            </ul></div>
+                        </nav>
+                            <nav>
+                            <div class="nav-items"><ul>
+                                <li><span><a href="about.html">ABOUT</a></span></li>
+                                <li><span><a href="#">CONTACT</span></a></li>
+                            </ul></div>
+                        </nav>
+                    <!-- </nav> -->
+                </div>
+                <div class="center-item">
+                    <a class="foot-logo" href="index.html">
+                        <img class="logo-img" src="assets/logo.png" alt="kind kitchen logo">
+                    </a>
+                    <div class="foot-icon">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="subscribtion">
+                    <h3 class="hidden">Subscribtion</h3>
+                    <h4>Keep In Touch</h4>
+                    <h5>Join our free newsletter.</h5>
+                    <div class="sub-form">
+                        <h4 class="hidden">Subcribtion Form</h4>
+                        <form action="subcribtion.php" method="POST" enctype="text/plain">
+                            <input name="Email" type="email" required placeholder="Email">
+                            <button type="submit" class="f-right" value="Send">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="center-item disclaimmers">
+                    <p>PRIVACY POLICIES & DISCLAIMERS / kind kitchen©2021</p>
+                </div>
+            </div>
         </section>
     </footer>
 </body>
