@@ -68,7 +68,13 @@ __________________________________________*/
    08. Footer
    
    // Recipe Page Style//
-   09. 
+   09. Hero
+   10. Instruction
+   11. Gallery
+   12. Rating
+
+   //About Page Style//
+   13.
 /* _____________________________________
 
 /* ______________________________________
@@ -160,6 +166,18 @@ body {
        grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .one-item {
+        grid-column: 2 / span 2;
+    }
+
+    .two-items {
+        display: grid;
+        grid-column: 1 / span 1;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+        column-gap: 2em;
+    }
+
     .three-items {
         display: grid;
         grid-column: 1 / span 1;
@@ -199,6 +217,18 @@ body {
         grid-template-rows: repeat(3, auto);
         background-color: #eae8e6;
         row-gap: 1em;
+    }
+
+    .follow-ins {
+        display: grid;
+        justify-content: space-evenly;
+    }
+
+    .about-items {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+        column-gap: 2em;
+        row-gap: 2em;
     }
 
     .subscribtion {
@@ -677,9 +707,9 @@ body {
     }
     
     
-     /*------------- End Recipe ------------*/
+        /*------------- End Recipe ------------*/
 
-    /*------------- Start Instruction ------------*/
+        /*------------- Start Instruction ------------*/
 
     .ingredients {
         grid-column: 2 / 3;
@@ -694,7 +724,7 @@ body {
         padding: 1.5em 0 1.5em 0;
     }
 
-    /*------------- Text Styles ------------*/
+        /*------------- Text Styles ------------*/
 
 
     .instruction h2 {
@@ -721,9 +751,9 @@ body {
         color: #CCCCCC !important;
     }
 
-    /*------------- End Instruction ------------*/
+        /*------------- End Instruction ------------*/
 
-    /*------------- Start Gallery ------------*/
+        /*------------- Start Gallery ------------*/
 
     .recipe-img {
         display: grid;
@@ -755,9 +785,9 @@ body {
         justify-self: center;
     }
 
-    /*------------- End Gallery ------------*/
+        /*------------- End Gallery ------------*/
 
-    /*------------- Start Rating ------------*/
+        /*------------- Start Rating ------------*/
 
     .rating {
         background-color: #efece7;
@@ -798,4 +828,102 @@ body {
     }  
 
 
-    /*------------- End Rating ------------*/
+        /*------------- End Rating ------------*/
+    
+    /*------------- End Recipe Page Style ------------*/
+
+    /*------------- Start About Page Style ------------*/
+
+        /*------------- Start About  ------------*/
+
+    .about-head {
+        margin: 4em 0em 2em 0em;
+    }
+
+        /*------------- Text Styles ------------*/
+
+    .about-items h2, .about-items p {
+        padding: 0;
+        line-height:1.8em;
+        text-align: center;
+    }
+
+    .about-items h2 {
+        font-size: 1.8em;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 1em;
+    }
+
+    .about-items p {
+        font-size: .9em;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .about-para {
+        display: grid;
+        grid-column: 2 / span 2;
+        justify-content: space-evenly;
+        column-gap: 2em;
+    }
+
+    .abt-para-one {
+        grid-column: 1 / span 1;
+    }
+
+    .abt-para-two {
+        grid-column: 3 / span 1;
+    }
+
+    .about-para p {
+        text-align: justify !important;
+    }
+
+        /*------------- End About  ------------*/
+
+        /*------------- Start Image ------------*/
+
+    .about-img {
+        display: grid;
+        grid-column: 2 / span 2;
+    }
+
+    .about-items img {
+        width: 100%;
+    }
+
+    .abt-img-two {
+        grid-column: 1 / span 1;
+
+    }
+
+    .abt-img-three {
+        grid-column: 3 / span 1;
+
+    }
+
+        /*------------- End Image ------------*/
+
+        /*------------- Start Follow ------------*/
+
+    .follow-ins h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .follow-ins a {
+        padding: 0 1.9em;
+    }
+
+    .follow-ins {
+        padding: 1.5em 0;
+        background-color: #EEECE7;
+    }
+
+        /*------------- End Follow ------------*/
+
+    /*------------- End About Page Style ------------*/
