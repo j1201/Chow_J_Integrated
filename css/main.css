@@ -78,6 +78,7 @@ __________________________________________*/
    13. About
    14. Image
    15. Ins Follow
+
 /* _____________________________________
 
 /* ______________________________________
@@ -220,6 +221,18 @@ body {
         grid-template-rows: repeat(3, auto);
         background-color: #eae8e6;
         row-gap: 1em;
+    }
+
+    .follow-ins {
+        display: grid;
+        justify-content: space-evenly;
+    }
+
+    .about-items {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, 2fr) 1fr;
+        column-gap: 2em;
+        row-gap: 2em;
     }
 
     .subscribtion {
@@ -713,9 +726,9 @@ body {
     }
     
     
-     /*------------- End Recipe ------------*/
+        /*------------- End Recipe ------------*/
 
-    /*------------- Start Instruction ------------*/
+        /*------------- Start Instruction ------------*/
 
     .ingredients {
         grid-column: 2 / 3;
@@ -730,7 +743,7 @@ body {
         padding: 1.5em 0 1.5em 0;
     }
 
-    /*------------- Text Styles ------------*/
+        /*------------- Text Styles ------------*/
 
 
     .instruction h2 {
@@ -757,9 +770,9 @@ body {
         color: #CCCCCC !important;
     }
 
-    /*------------- End Instruction ------------*/
+        /*------------- End Instruction ------------*/
 
-    /*------------- Start Gallery ------------*/
+        /*------------- Start Gallery ------------*/
 
     .recipe-img {
         display: grid;
@@ -791,9 +804,9 @@ body {
         justify-self: center;
     }
 
-    /*------------- End Gallery ------------*/
+        /*------------- End Gallery ------------*/
 
-    /*------------- Start Rating ------------*/
+        /*------------- Start Rating ------------*/
 
     .rating {
         background-color: #efece7;
@@ -832,7 +845,6 @@ body {
         transform: scale(0.8);
         transition: 0.3s ease;
     }  
-
 
     /*------------- End Rating ------------*/
 
