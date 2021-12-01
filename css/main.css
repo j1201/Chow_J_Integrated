@@ -810,7 +810,7 @@ body {
 
     .rating {
         background-color: #efece7;
-        padding: 2em 0 0 0;
+        padding: 2em 0 1em 0;
     }
 
     .rating h3 {
@@ -896,7 +896,6 @@ body {
             text-align: justify !important;
         }
     
-    
         /*------------- End About  ------------*/
     
         /*------------- Start Image ------------*/
@@ -920,8 +919,6 @@ body {
     
         }
     
-    
-      
         /*------------- End Image ------------*/
     
         /*------------- Start Follow ------------*/
