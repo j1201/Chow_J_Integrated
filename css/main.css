@@ -1,0 +1,148 @@
+/*
+Style Name: HTML Attributes & Forms
+Description: Class File
+Author: Joanna Chow
+Version: 1.0
+Tags: FIP
+*/
+
+/*--------------------------------------------------------------
+Accessibility
+--------------------------------------------------------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+/* --------------
+    Fonts   
+
+----------------*/
+
+/* ---------------*/
+
+/* ---------------
+    Plugins
+-----------------*/
+
+/* _________________________________________
+
+        CSS Guide
+__________________________________________*/
+
+/* 01. General Styles
+    02. 
+/* ______________________________________
+
+    01. General Styles
+    ___________________________________*/
+
+    .hidden {
+        display: none;
+    }
+    
+   .box-model {
+    margin: 1rem;
+    padding: 1rem;
+    background: #000;
+    }
+
+    .nav-link {
+        font-family: 'Ovo', serif;
+        font-size: 20px;
+       }
+
+    h2 {
+        font-family: 'Ovo', serif;
+        font-size: 42px;
+       }
+    
+    p {
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 17px;
+      }
+
+/* _____________________________________
+
+   02. CSS Grid
+   _____________________________________ */
+
+   @supports (grid-area: auto) {
+     
+    .site {
+       max-width: none;
+    }
+
+    /*--------- Grid Items ---------*/
+
+    .head {
+       display: grid;
+       grid-template-columns: 1fr repeat(1,minmax(auto, 30em)) 1fr;
+    }
+/* 
+    .main > *, .foot > *{
+        display: grid;
+        grid-template-columns: 1fr repeat(2,minmax(auto, 30em)) 1fr;
+     } */
+
+    /*--------- End Grid Items ---------*/
+
+    /*--------- Site Header ---------*/
+
+     .nav {
+        grid-column: 1 / span 1;
+     }
+
+     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        padding: 8px;
+      }
+
+      .logo {
+          grid-column: 2 / span 1;
+          justify-self: center;
+      }
+
+      .logo-img {
+        max-width: 350px;
+        height: auto;
+      }
+
+     /*--------- End Site Header ---------*/
