@@ -828,6 +828,10 @@ body {
     }
 
     .rating input[type="radio"] {
+        opacity: 0;
+    } 
+
+    #rating1 {
         display: none;
     }
 
@@ -903,6 +907,7 @@ body {
         .about-img {
             display: grid;
             grid-column: 2 / span 2;
+            column-gap: 2em;
         }
     
         .about-items img {
