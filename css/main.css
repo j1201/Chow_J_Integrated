@@ -830,7 +830,7 @@ body {
     .rating input[type="radio"] {
         display: none;
     } 
-
+    
     .rating input[type="radio"] + label {
        font-size: 1.5em;
        text-shadow: 1px 1px 0 #838383;
