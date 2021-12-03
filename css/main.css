@@ -828,13 +828,9 @@ body {
     }
 
     .rating input[type="radio"] {
-        opacity: 0;
-    } 
-
-    #rating1 {
         display: none;
-    }
-
+    } 
+    
     .rating input[type="radio"] + label {
        font-size: 1.5em;
        text-shadow: 1px 1px 0 #838383;
